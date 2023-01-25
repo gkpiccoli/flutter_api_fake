@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         },
         child: const Icon(Icons.add),
       ),
+      appBar: AppBar(title: const Text('Flutter Card Deck')),
     );
   }
 }
