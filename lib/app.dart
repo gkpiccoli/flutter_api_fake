@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          // ignore: avoid_print
           print('Hi Bastião');
         },
         child: const Icon(Icons.add),
