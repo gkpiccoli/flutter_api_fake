@@ -8,12 +8,15 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  int count = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            count++;
+          },
           child: const Icon(Icons.add),
         ),
         appBar: AppBar(title: const Text('Image Generator')),
