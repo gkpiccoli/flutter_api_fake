@@ -1,7 +1,6 @@
 # flutter_fake_api
 
-Api fake em Flutter que insere fotos de uma lista json na tela.
-
+Api fake em Flutter que insere fotos de uma lista Json na tela, de forma persistente.
 
 ## Getting Started
 
