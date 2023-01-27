@@ -2,6 +2,8 @@
 
 Api fake em Flutter que insere fotos de uma lista Json na tela, de forma persistente.
 
+The app fetch data from fake api and draw itens on screen
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
