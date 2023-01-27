@@ -16,7 +16,9 @@ class _MyAppState extends State<MyApp> {
         body: Text('$count'),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            count++;
+            setState(() {
+              count += 1;
+            });
           },
           child: const Icon(Icons.add),
         ),
