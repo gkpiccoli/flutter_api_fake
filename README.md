@@ -1,6 +1,6 @@
-# flutter_deck
+# flutter_fake_api
 
-A new Flutter project.
+Api fake em Flutter que insere fotos de uma lista json na tela.
 
 
 ## Getting Started
