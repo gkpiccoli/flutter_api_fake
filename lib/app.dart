@@ -13,6 +13,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        body: Text('$count'),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             count++;
