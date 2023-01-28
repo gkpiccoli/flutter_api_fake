@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import '../models/image_model.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class ImageList extends StatefulWidget {
+  const ImageList({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<ImageList> createState() => _ImageListState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _ImageListState extends State<ImageList> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
   }
 }
-
