@@ -14,11 +14,16 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int count = 0;
 
+  List<ImageModel> images = [];
+
   Future<void> fetchImage() async {
     count++;
     var response =
         await get('https://jsonplaceholder.typicode.com/photos/$count' as Uri);
     var imageModel = ImageModel.fromJson(json.decode(response.body));
+    setState(() {
+      images.add(imageModel);
+    });
   }
 
   @override
