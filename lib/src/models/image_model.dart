@@ -7,5 +7,7 @@ class ImageModel {
 
   ImageModel.fromJson(parsedJson) {
     id = parsedJson['id'];
+    url = parsedJson['url'];
+    title = parsedJson['title'];
   }
 }
