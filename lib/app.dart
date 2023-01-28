@@ -12,9 +12,8 @@ class _MyAppState extends State<MyApp> {
   int count = 0;
 
   void fetchImage() {
-    setState(() {
-      count += 1;
-    });
+    count++;
+    get('https://jsonplaceholder.typicode.com/photos/$count' as Uri);
   }
 
   @override
