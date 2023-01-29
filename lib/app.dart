@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Text('$count'),
+        body: ImageList(images),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             fetchImage;
