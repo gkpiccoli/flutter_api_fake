@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import '../models/image_model.dart';
 
 class ImageList extends StatelessWidget {
-  const ImageList({super.key});
-
-  List<ImageModel> images;
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
+  late final List<ImageModel> images;
+  ImageList(this.images);
+  Widget build(context) {
+    return ListView.builder(itemBuilder: (context, int index) {
+      return Text(images[index].url);
+    });
   }
 }
