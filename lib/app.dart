@@ -17,9 +17,11 @@ class _MyAppState extends State<MyApp> {
   List<ImageModel> images = [];
 
   Future<void> fetchImage() async {
-    var response = await get(
-        'https://jsonplaceholder.typicode.com/photos/{$count}' as Uri);
+    var response =
+        await get('https://jsonplaceholder.typicode.com/photos/$count' as Uri);
     var imageModel = ImageModel.fromJson(json.decode(response.body));
+
+    // Não está pegando o count, erro de sintaxe?
     setState(() {
       images.add(imageModel);
       count++;
